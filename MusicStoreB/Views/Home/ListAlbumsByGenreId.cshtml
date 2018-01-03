@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "ListAlbumsByGenreId";
+}
+
+<h2>List Albums By GenreId</h2>
+
+<pre>
+@foreach (var anItem in ViewBag.AListOfAlbums)
+{
+    @anItem.ToString() <br/> <br/>
+}
+</pre>

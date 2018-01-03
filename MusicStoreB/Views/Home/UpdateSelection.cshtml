@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "UpdateSelection";
+}
+
+<h2>Update Selection</h2>
+
+Select a Album to update.
+
+<form action="UpdateForm">
+<pre>
+<select name="AlbumId">
+    @foreach(var anItem in ViewBag.AListOfAlbum)
+    {
+        <option value="@anItem.AlbumId">@anItem.Title</option>
+    }
+
+</select> <br />
+</pre>
+<input type="submit" /><input type="reset" />
+</form>

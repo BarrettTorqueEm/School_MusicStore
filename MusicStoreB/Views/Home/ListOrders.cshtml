@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "ListOrders";
+}
+
+<h2>List Orders</h2>
+
+<pre>
+@foreach (var anItem in ViewBag.AListOfOrders)
+{
+   @anItem.ToString()<br /><br />
+}
+</pre>
+

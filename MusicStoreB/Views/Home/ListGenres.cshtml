@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "ListGenres";
+}
+
+<h2>List Genres</h2>
+
+    @foreach (var anItem in ViewBag.AListOfGenre)
+    {
+       <a href="ListAlbumsByGenreId?GenreId=@anItem.GenreId"> @anItem.GenreName </a> <br /> 
+    }
+

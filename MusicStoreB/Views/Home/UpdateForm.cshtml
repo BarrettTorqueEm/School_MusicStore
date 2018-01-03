@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "UpdateForm";
+}
+
+<h2>Update Form</h2>
+
+<form action="UpdatedInfo">
+    <!--Need to make ALbum Id a non editable-->
+    <input type="number" name="aAlbumId" value="@ViewBag.aListOfAlbumsById[0].ToString2()" readonly/> AlbumName <br />
+    <input type="number" name="aGenreId" value="@ViewBag.aListOfAlbumsById[0].ToString3()" /> Genre Id <br />
+    <input type="number" name="aArtistId" value="@ViewBag.aListOfAlbumsById[0].ToString4()" /> Artist Id <br />
+    <input type="text" name="aTitle" value="@ViewBag.aListOfAlbumsById[0].ToString5()" /> Title <br />
+    <input type="text" name="aPrice" value="@ViewBag.aListOfAlbumsById[0].ToString6()" /> Price <br />
+    <input type="text" name="aAlbumArtUrl" value="@ViewBag.aListOfAlbumsById[0].ToString7()" /> Album Art Url <br /> <br />
+    <input type="text" name="Test" value="AlbumId2" /> Testing <br /> <br />
+    <input type="submit" /> <input type="reset" />
+</form> <br /><br />
